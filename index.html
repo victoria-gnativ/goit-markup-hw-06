@@ -44,14 +44,17 @@
           <li class="contacts-item">
             <a href="mailto:info@devstudio.com" class="contacts-item-link link">
               <svg class="contacts-item-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope-hover"></use></svg>
-                info@devstudio.com</a>
+                <use href="./images/icons.svg#icon-envelope-hover"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li class="contacts-item">
             <a href="tel:+380961111111" class="contacts-item-link link"
               ><svg class="contacts-item-icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone1"></use></svg>
-                +38 096 111 11 11
+                <use href="./images/icons.svg#icon-smartphone1"></use>
+              </svg>
+              +38 096 111 11 11
             </a>
           </li>
         </ul>
@@ -459,18 +462,82 @@
               </li>
             </ul>
           </div>
+          <div class="footer-subscribe-container">
+            <h2 class="subscribe-lable">Підпишіться на розсилку</h2>
+            <form class="subscribe-form">
+              <div class="subscribe-action">
+                <input
+                  class="subscribe-input"
+                  type="text"
+                  placeholder="Email"
+                />
+                <button type="submit" class="submit-button-text">
+                  Підписатися
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="close-button">
-            <img
-              class="modal-img"
-              src="./images/close.svg"
-              alt="Закрити вікно"
-            />
+          <img class="modal-img" src="./images/close.svg" alt="Закрити вікно" />
         </button>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form">
+          <label for="name" class="modal-lable">
+            <span>Ім'я</span>
+          </label>
+          <input
+            class="modal-input"
+            type="text"
+            name="name"
+            id="name"
+            required
+          />
+
+          <label class="modal-lable" for="tel"><span>Телефон</span></label>
+          <input class="modal-input" type="tel" name="tel" id="tel" required />
+
+          <label class="modal-lable" for="email"><span>Пошта</span></label>
+          <input
+            class="modal-input"
+            type="email"
+            name="email"
+            id="email"
+            required
+          />
+
+          <label class="modal-lable" for="comment"><span>Коментар</span></label>
+          <textarea
+            class="modal-comment"
+            name="comment"
+            id="comment"
+            placeholder="Введіть текст"
+          ></textarea>
+
+          <div class="rules-checkbox">
+            <input
+              type="checkbox"
+              name="rules"
+              value="rules"
+              id="rules"
+              required
+            />
+            <label class="checkbox-text" for="rules"
+              >Погоджуюся з розсилкою та приймаю
+              <span>
+                <a href="" class="checkbox-link">Умови договору</a>
+              </span>
+            </label>
+          </div>
+
+          <div class="submit-button">
+            <button type="submit" class="submit-button-text">Відправити</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
