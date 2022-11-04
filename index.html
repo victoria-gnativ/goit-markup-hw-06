@@ -471,8 +471,11 @@
                   type="text"
                   placeholder="Email"
                 />
-                <button type="submit" class="submit-button-text">
+                <button type="submit" class="subscribe-button-text">
                   Підписатися
+                  <svg class="submit-button-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
                 </button>
               </div>
             </form>
@@ -542,12 +545,14 @@
 
           <div class="rules-checkbox">
             <input
+              class="checkbox"
               type="checkbox"
               name="rules"
               value="rules"
               id="rules"
               required
             />
+            <span class="checkbox-icon"></span>
             <label class="checkbox-text" for="rules"
               >Погоджуюся з розсилкою та приймаю
               <span>
